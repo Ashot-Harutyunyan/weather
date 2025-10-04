@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+    <link rel="icon" href="./img/weather.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+      <form action="#">
+          <div class="search-wrapper">
+              <img class="search-icon" src="./img/search.svg" alt="search icon">
+              <input type="text" name="location" id="location" value="Yerevan" placeholder="Location Search">
+              <img class="close-icon active" src="./img/close.svg" alt="close icon">
+          </div>
+          <input type="submit" value="Search">
+      </form>
+        
+      <div class="container-weather open">
+          <div class="container-weather-close">
+              <img class="weather-close-icon" src="./img/weather-close.svg" alt="close icon">
+          </div>
+          <div id="loader" class="spinner"></div>
+          <div id="error" class="container-error">
+              <img src="./img/error-phone.png" alt="error phone" class="error-phone">
+              <h3>Oops! We couldn't find weather for that location. Try another city.</h3>
+              <button id="refreshButton">
+                  Refresh
+                  <img src="./img/refresh-icon.svg" alt="refresh icon">
+              </button>
+          </div>
+          <div class="container-time">
+              <h2 class="fade-in"></h2>
+          </div>
+          <div class="container-icon">
+              <img src="" alt="" class="static-element">
+          </div>
+          <div class="container-temperature">
+              <h2 class="temperature fade-in"></h2>
+              <h2 class="country fade-in"></h2>
+          </div>
+          <div class="container-humidity-wind">
+              <div class="container-humidity">
+                  <img src="./img/water.svg" alt="water icon" class="static-element">
+                  <div class="humidity">
+                      <p class="humidity-percent fade-in"></p>
+                      <p class="static-element">Humidity</p>
+                  </div>
+              </div>
+              <div class="container-wind">
+                  <img src="./img/wind.svg" alt="wind icon" class="static-element">
+                  <div class="wind">
+                      <p class="wind-km fade-in"></p>
+                      <p class="static-element">Wind Speed</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
