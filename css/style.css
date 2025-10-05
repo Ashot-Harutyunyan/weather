@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    min-height: 696px;
+    min-height: 700px;
     height: 100dvh;
     background-image: url("../img/weather-background.jpg");
     background-position: center;
@@ -363,6 +363,10 @@ input[type=submit]:active {
 }
 
 @media (max-width: 430px) {
+    body {
+        min-height: 800px;
+    }
+
     form {
         gap: 10px;
     }
