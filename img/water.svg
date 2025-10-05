@@ -1,2 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-width:1.92px;}</style></defs><path class="cls-1" d="M.5,3.4c1.92,0,1.92.95,3.83.95S6.25,3.4,8.16,3.4s1.92.95,3.83.95,1.92-.95,3.83-.95,1.92.95,3.84.95,1.92-.95,3.84-.95"/><path class="cls-1" d="M.5,9.15c1.92,0,1.92.95,3.83.95s1.92-.95,3.83-.95,1.92.95,3.83.95,1.92-.95,3.83-.95,1.92.95,3.84.95,1.92-.95,3.84-.95"/><path class="cls-1" d="M.5,14.9c1.92,0,1.92.95,3.83.95s1.92-.95,3.83-.95,1.92.95,3.83.95,1.92-.95,3.83-.95,1.92.95,3.84.95,1.92-.95,3.84-.95"/><path class="cls-1" d="M.5,20.65c1.92,0,1.92,1,3.83,1s1.92-1,3.83-1,1.92,1,3.83,1,1.92-1,3.83-1,1.92,1,3.84,1,1.92-1,3.84-1"/></svg>
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" width="900" height="900">
+    <style>
+        .wave {
+        fill: none;
+        stroke: #639EFF;
+        stroke-width: 6;
+        stroke-linecap: round;
+        animation: moveWave 2s linear infinite;
+        }
+
+        @keyframes moveWave {
+        0% {
+        transform: translateX(0);
+        }
+        100% {
+        transform: translateX(-20px);
+        }
+        }
+    </style>
+
+    <g>
+        <path class="wave" d="M0 20 Q10 10, 20 20 T40 20 T60 20 T80 20 T100 20 T120 20" />
+        <path class="wave" d="M0 40 Q10 30, 20 40 T40 40 T60 40 T80 40 T100 40 T120 40" />
+        <path class="wave" d="M0 60 Q10 50, 20 60 T40 60 T60 60 T80 60 T100 60 T120 60" />
+        <path class="wave" d="M0 80 Q10 70, 20 80 T40 80 T60 80 T80 80 T100 80 T120 80" />
+    </g>
+</svg>
