@@ -5,7 +5,7 @@
         stroke: #639EFF;
         stroke-width: 6;
         stroke-linecap: round;
-        animation: moveWave 2s linear infinite;
+        animation: moveWave 2s linear infinite alternate;
         }
 
         @keyframes moveWave {
