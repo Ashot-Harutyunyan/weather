@@ -354,7 +354,7 @@ input[type=submit]:active {
     }
 
     .container-humidity-wind {
-        gap: 25px;
+        gap: 10px;
     }
 
     .humidity, .wind {
@@ -369,6 +369,7 @@ input[type=submit]:active {
 
     form {
         gap: 10px;
+        margin: 15px auto 25px auto;
     }
 
     .container-humidity-wind {
@@ -405,7 +406,7 @@ input[type=submit]:active {
 
 @media (max-width: 410px) {
     .container-weather.open {
-        padding: 50px 25px;
+        padding: 25px;
     }
 
     .search-wrapper {
@@ -420,6 +421,11 @@ input[type=submit]:active {
     .search-wrapper input, 
     input[type=submit] {
         font-size: 14px;
+    }
+
+    .container-temperature {
+        gap: 0;
+        margin-bottom: 0;
     }
 }
 
