@@ -42,7 +42,7 @@ async function getWeather(value) {
 
         setFadeContent(weatherTime, time);
 
-        setFadeContent(messageTimezone, `${data.name} time zone`)
+        setFadeContent(messageTimezone, `${data.name} time zone`);
 
         const iconCode = data.weather[0].icon;
         if (arrayIcon.includes(iconCode)) {
@@ -50,7 +50,7 @@ async function getWeather(value) {
             setFadeContent(weatherIcon, iconSrc);
         }else {
             const iconSrc = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-            setFadeContent(weatherIcon, iconSrc)
+            setFadeContent(weatherIcon, iconSrc);
         }
 
         setFadeContent(temperature, `${data.main.temp}°C`);
@@ -59,7 +59,7 @@ async function getWeather(value) {
 
         const windSpeedMS = data.wind.speed;
         const windSpeedKMH = (windSpeedMS * 3.6).toFixed(2);
-        setFadeContent(wind, `${windSpeedKMH} km/h`)
+        setFadeContent(wind, `${windSpeedKMH} km/h`);
 
         staticElements.forEach(e => e.classList.add('show'));
         containerError.classList.remove('error');
